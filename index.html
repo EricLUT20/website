@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Verdana, Arial, sans-serif;
+      }
+      .center {
+        margin: auto;
+        padding: 60px;
+        width: 60%;
+      }
+      h1 {
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        font-size: 16px;
+        text-align: left;
+        table-layout: fixed;
+        width: 100%;
+      }
+      th {
+        background-color: #b7d0ff;
+        font-weight: bold;
+        padding: 12px 0px 12px 6px;
+        border-bottom: 2px solid gray;
+      }
+      td {
+        padding: 6px;
+        border-bottom: 1px solid gray;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tr:not(:first-child):not(:nth-child(even)) {
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Municipality employment statistics in Finland</h1>
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Municipality</th>
+            <th>Population</th>
+            <th>Employment amount</th>
+            <th>Eployment-%</th>
+          </tr>
+        </thead>
+        <tbody id="myTableBody"></tbody>
+      </table>
+    </div>
+    <p id="text"></p>
+    <script src="src/index.js"></script>
+  </body>
+</html>
